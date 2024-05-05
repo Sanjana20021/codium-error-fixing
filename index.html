@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel and Tourism Company</title>
+<style>
+    body {
+        background-color: lightblue;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0; /* Added padding for better spacing */
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .destination {
+        margin: 20px; /* Added margin for better separation */
+        padding: 20px; /* Adjusted padding for consistency */
+        background-color: #f9f9f9;
+    }
+    form {
+        margin: 20px;
+        padding: 20px; /* Adjusted padding for consistency */
+        background-color: #f9f9f9;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    button[type="submit"] {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button[type="submit"]:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#popular">Popular Destinations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h1>Welcome to our Travel and Tourism Company!</h1>
+    <p>Explore the world with us.</p>
+</section>
+
+<section id="popular">
+    <div class="destination">
+        <img src="destination1.jpg" alt="Destination 1">
+        <h2>Destination 1</h2>
+        <p>Description of Destination 1.</p>
+    </div>
+    <div class="destination">
+        <img src="destination2.jpg" alt="Destination 2">
+        <h2>Destination 2</h2>
+        <p>Description of Destination 2.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <h3>Send us a message</h3>
+        <input type="text" id="name" placeholder="Your Name">
+        <br>
+        <input type="email" id="email" placeholder="Your Email">
+        <br>
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <br>
+        <button type="submit" onclick="submitForm()">Send</button>
+    </form>
+</section>
+
+<script>
+    function submitForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // You can add further logic here, like sending the form data to a server
+        console.log('Form submitted with Name:', name, 'Email:', email, 'Message:', message);
+    }
+</script>
+</body>
+</html>
